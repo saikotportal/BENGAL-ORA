@@ -1,0 +1,526 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  outline: none;
+  font-family: 'Poppins', sans-serif;
+}
+body{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  overflow: hidden;
+  background: url("bg4\ \(2\).jpeg"), -webkit-linear-gradient(bottom, #0250c5, #d43f8d);
+}
+body::after{
+  position: absolute;
+  content: '';
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.40);
+
+}
+::selection{
+  color: #F44336;
+  background: #000000;
+}
+.container{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  z-index: 999;
+  text-align: center;
+  padding: 60px 32px;
+  width: 450px;
+  transform: translate(-50%,-50%);
+  background: rgba(255,255,255,0.04);
+  box-shadow: -1px 4px 28px 0px rgba(0,0,0,0.75);
+}
+.container header{
+  color: whitesmoke;
+  font-size: 35px;
+  font-weight: 600;
+  margin: 0 0 30px 0;
+}
+.container .form-outer{
+  width: 100%;
+  overflow: hidden;
+}
+.container .form-outer form{
+  display: flex;
+  width: 400%;
+}
+.form-outer form .page{
+  width: 25%;
+  transition: margin-left 0.3s ease-in-out;
+}
+.form-outer form .page .title{
+  color: #f5f5f575;
+  text-align: center;
+  font-size: 25px;
+  font-weight: 500;
+}
+.form-outer form .page .field{
+  width: 450px;
+  height: 45px;
+  margin: 45px 0;
+  display: flex;
+  position: relative;
+}
+form .page .field .label{
+  position: absolute;
+  top: -30px;
+  font-weight: 500;
+}
+form .page .field input{
+  color: #f5f5f5b8;
+  height: 100%;
+  width: 100%;
+  border: transparent;
+  border-bottom: 1px solid;
+  border-bottom: 1px solid rgba(0,0,0,0.75);
+  background: transparent;
+  padding-left: 15px;
+  font-size: 18px;
+  
+
+}
+form .page .field select{
+  background: transparent;
+  border: transparent;
+  border-bottom: 1px solid;
+  width: 100%;
+  padding-left: 10px;
+  font-size: 17px;
+  font-weight: 500;
+}
+form .page .field button{
+  width: 100%;
+  height: calc(100% + 5px);
+  border: none;
+  background: #bababaBD;
+  margin-top: -20px;
+  border-radius: 5px;
+  color: #000000;
+  cursor: pointer;
+  font-size: 18px;
+  font-weight: 500;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  transition: 0.5s ease;
+}
+form .page .field button:hover{
+  background: #000000;
+  color:#F44336 ;
+}
+form .page .btns button{
+  margin-top: -20px!important;
+}
+form .page .btns button.prev{
+  margin-right: 3px;
+  font-size: 17px;
+}
+form .page .btns button.next{
+  margin-left: 3px;
+}
+.container .progress-bar{
+  display: flex;
+  margin: 40px 0;
+  user-select: none;
+}
+.container .progress-bar .step{
+  text-align: center;
+  width: 100%;
+  position: relative;
+}
+.container .progress-bar .step p{
+  font-weight: 500;
+  font-size: 18px;
+  color: #9E9E9E;
+  margin-bottom: 8px;
+}
+.progress-bar .step .bullet{
+  height: 25px;
+  width: 25px;
+  color: #9E9E9E;
+  border: 2px solid #9E9E9E;
+  display: inline-block;
+  border-radius: 50%;
+  position: relative;
+  transition: 0.2s;
+  font-weight: 500;
+  font-size: 17px;
+  line-height: 25px;
+}
+.progress-bar .step .bullet.active{
+  border-color:#F44336;
+  background: #F44336;
+}
+.progress-bar .step .bullet span{
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.progress-bar .step .bullet.active span{
+  display: none;
+}
+.progress-bar .step .bullet:before,
+.progress-bar .step .bullet:after{
+  position: absolute;
+  content: '';
+  bottom: 11px;
+  right: -84px;
+  height: 3px;
+  width: 80px;
+  background: #9E9E9E;
+}
+.progress-bar .step .bullet.active:after{
+  background: #F44336;
+  transform: scaleX(0);
+  transform-origin: left;
+  animation: animate 0.3s linear forwards;
+}
+@keyframes animate {
+  100%{
+    transform: scaleX(1);
+  }
+}
+.progress-bar .step:last-child .bullet:before,
+.progress-bar .step:last-child .bullet:after{
+  display: none;
+}
+.progress-bar .step p.active{
+  color: #F44336;
+  transition: 0.2s linear;
+}
+.progress-bar .step .check{
+  position: absolute;
+  left: 50%;
+  top: 70%;
+  font-size: 15px;
+  transform: translate(-50%, -50%);
+  display: none;
+}
+.progress-bar .step .check.active{
+  display: block;
+  color: #fff;
+}
+.signin{
+  font-size: 16px;
+  color: rgb(255, 0, 0);
+  font-family: 'Poppins',sans-serif;
+}
+.signin a{
+  color: #ffffff;
+  text-decoration: none;
+}
+.signin a:hover{
+  text-decoration: underline;
+  color: #F44336;
+}
+
+
+
+
+
+
+
+new  
+
+
+
+
+@import  url('https://fonts.googleapis.com/css?family=Montserrat:400,500,600,700|Poppins:400,500&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  user-select: none;
+}
+.bg-img{
+  background: url('bg4\ \(2\).jpeg');
+  height: 100vh;
+  background-size: cover;
+  background-position: center;
+}
+
+.content{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  z-index: 999;
+  text-align: center;
+  padding: 60px 32px;
+  width: 450px;
+  transform: translate(-50%,-50%);
+  background: rgba(255,255,255,0.04);
+  box-shadow: -1px 4px 28px 0px rgba(0,0,0,0.75);
+}
+.content header{
+  color: whitesmoke;
+  font-size: 33px;
+  font-weight: 600;
+  margin: 0 0 35px 0;
+  font-family: 'Poppins', sans-serif;
+}
+.field{
+  position: relative;
+  height: 45px;
+  width: 100%;
+  display: flex;
+  border: transparent;
+  background: transparent;
+
+}
+.field span{
+  color: #f5f5f575;
+  width: 0px;
+  line-height: 45px;
+}
+.field input{
+  height: 100%;
+  width: 100%;
+  background: transparent;
+  padding: 0px 0px 0px 20px;
+  border: none;
+  border-bottom: 1px solid  rgba(0,0,0,0.75);
+  outline: none;
+  color: #f5f5f5b8;
+  font-size: 16px;
+  font-family: 'Poppins',sans-serif;
+}
+.space{
+  margin-top: 16px;
+}
+.show{
+  position: absolute;
+  right: 13px;
+  font-size: 13px;
+  font-weight: 700;
+  color: #222;
+  display: none;
+  cursor: pointer;
+  font-family: 'Poppins',sans-serif;
+}
+.pass-key:valid ~ .show{
+  display: block;
+}
+.pass{
+  display: flex;
+  justify-content: space-between;
+  margin: 20px 5px 40px 0px;
+}
+.passa{
+  display: flex;
+  justify-content: space-between;
+  margin: 20px 5px 40px 50px;
+}
+
+.pass label{
+  color: #ffffff9c;
+  padding: 11px;
+  text-decoration: none;
+  font-family: 'Poppins',sans-serif;
+}
+
+.passa label{
+  color: #ffffff9c;
+  padding: 11px;
+  text-decoration: none;
+  font-family: 'Poppins',sans-serif;
+}
+
+.pass a{
+  color: white;
+  padding: 0px;
+  text-decoration: none;
+  font-family: 'Poppins',sans-serif;
+}
+.pass:hover a{
+  text-decoration: underline;
+}
+.field input[type="submit"]{
+  background: #F44336;
+  border: transparent;
+  border-radius: 50px;
+  color: white;
+  padding: 0px 0px 0px 0px;
+  font-size: 18px;
+  letter-spacing: 1px;
+  font-weight: 600;
+  cursor: pointer;
+  font-family: 'Poppins',sans-serif;
+}
+.field input[type="submit"]:hover{
+  background: #000000;
+  color: #F44336;
+}
+.login{
+  color: white;
+  margin: 20px 0;
+  font-family: 'Poppins',sans-serif;
+}
+.links{
+  display: flex;
+  cursor: pointer;
+  color: white;
+  margin: 0 0 20px 0;
+}
+
+
+.facebook,.instagram{
+  width: 100%;
+  height: 45px;
+  line-height: 45px;
+  margin-left: 10px;
+}
+.facebook{
+  margin-left: 0;
+  background: #4267B2;
+  border: 1px solid #3e61a8;
+  border-radius: 50px;
+}
+.instagram{
+  background: #E1306C;
+  border: 1px solid #df2060;
+  border-radius: 50px;
+}
+.facebook:hover{
+  background: #3e61a8;
+}
+.instagram:hover{
+  background: #df2060;
+}
+.links i{
+  font-size: 17px;
+}
+i span{
+  margin-left: 8px;
+  font-weight: 500;
+  letter-spacing: 1px;
+  font-size: 16px;
+  font-family: 'Poppins',sans-serif;
+}
+.signup{
+  font-size: 16px;
+  padding: 10px;
+  color: rgb(255, 255, 255);
+  font-family: 'Poppins',sans-serif;
+}
+.signup a{
+  color: #3498db;
+  text-decoration: none;
+}
+.signup a:hover{
+  text-decoration: underline;
+  color: #F44336;
+}
+
+
+
+
+
+/* From Uiverse.io by boryanakrasteva */ 
+.checkbox-wrapper input[type="checkbox"] {
+  visibility: hidden;
+  display: none;
+}
+
+.checkbox-wrapper *,
+.checkbox-wrapper ::after,
+.checkbox-wrapper ::before {
+  box-sizing: border-box;
+  user-select: none;
+}
+
+.checkbox-wrapper {
+  position: relative;
+  display: block;
+  overflow: hidden;
+}
+
+.checkbox-wrapper .label {
+  cursor: pointer;
+}
+
+.checkbox-wrapper .check {
+  width: 50px;
+  height: 50px;
+  position: absolute;
+  opacity: 0;
+}
+
+.checkbox-wrapper .label svg {
+  vertical-align: middle;
+}
+
+.checkbox-wrapper .path1 {
+  stroke-dasharray: 400;
+  stroke-dashoffset: 400;
+  transition: 0.5s stroke-dashoffset;
+  opacity: 1;
+}
+
+.checkbox-wrapper .check:checked + label svg g path {
+  stroke-dashoffset: 0;
+  opacity: 1;
+}
+
+
+
+
+
+
+/* From Uiverse.io by iArsene69 */ 
+.check-container {
+  position: relative;
+  display: flex;
+  cursor: pointer;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+  background: linear-gradient(90deg, #b3ffab 0%, #12fff7 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.check {
+  position: absolute;
+  appearance: none;
+}
+
+.check-toggle {
+  position: absolute;
+  left: 0;
+  top: 50%;
+  height: 1.5rem;
+  width: 1.5rem;
+  transform: translateX(-150%) translateY(-50%);
+  border-radius: 0.25em;
+  border: 2px solid #b3ffab;
+}
+
+.check-toggle + .check-svg {
+  position: absolute;
+  left: 0;
+  top: 50%;
+  height: 2rem;
+  width: 2rem;
+  transform: translateX(-120%) translateY(-50%);
+  transition: stroke-dashoffset 0.5s ease-out;
+  stroke-dasharray: 100;
+  stroke-dashoffset: 100;
+}
+
+.check:checked + .check-toggle + .check-svg {
+  stroke-dashoffset: 0;
+}
+
+.check-label {
+  font-size: 1rem;
+  user-select: none;
+  font-weight: semi-bold;
+}
