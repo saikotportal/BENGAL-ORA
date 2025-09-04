@@ -428,7 +428,7 @@ summary {
     display: list-item
 }
 
-template {
+ {
     display: none
 }
 
@@ -2108,8 +2108,8 @@ pre code {
     font-size: 1rem;
     line-height: 1.5;
     color: #495057;
-    background-color: #fff;
-    border: 1px solid #ced4da;
+    background-color: ;
+    border: 1px solid #696969bd;
     border-radius: .25rem;
     transition: border-color .15s ease-in-out, box-shadow .15s ease-in-out
 }
@@ -2126,9 +2126,9 @@ pre code {
 }
 
 .form-control:focus {
-    color: #495057;
-    background-color: #fff;
-    border-color: #80bdff;
+    color: #ffffff;
+    background-color:;
+    border-color: #ffffff;
     outline: 0;
     box-shadow: 0 0 0 .2rem rgba(0, 123, 255, .25)
 }
@@ -6598,10 +6598,15 @@ button.bg-dark:hover {
 .d-table-cell {
     display: table-cell !important
 }
-
+.dd-flex {
+    display: -ms-flexbox !important;
+    display: flex !important;
+   background-color: #000;
+}
 .d-flex {
     display: -ms-flexbox !important;
-    display: flex !important
+    display: flex !important;
+  
 }
 
 .d-inline-flex {

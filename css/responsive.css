@@ -99,12 +99,12 @@
 	.mobile-nav-wrapper { display:block; }
 	body.menuOn .pageWrapper { left:270px }
 	#pageWrapper { position:relative; left:0; -ms-transition:all 0.4s ease-in-out; -webkit-transition: all 0.4s ease-in-out; transition: all 0.4s ease-in-out; }
-	.js-mobile-nav-toggle .anm { display:none; color:#000; }
+	.js-mobile-nav-toggle .anm { display:none; color:#ffffff; }
 	.site-header__menu { border:0; padding:0; font-size:17px; display:block; cursor:pointer; }
 	.js-mobile-nav-toggle.mobile-nav--open .anm-bars-r,
 	.js-mobile-nav-toggle.mobile-nav--close .icon.anm.anm-times-l { display:inline-block; }
 	#MobileNav { height:100%; overflow:auto; list-style:none; padding:0; margin:0; }
-	.mobile-nav-wrapper .closemobileMenu { color:#000; font-size:13px; padding:8px 10px; background-color:#eee; cursor:pointer; }
+	.mobile-nav-wrapper .closemobileMenu { color:#000; font-size:13px; padding:8px 10px; background-color:#ffffff; cursor:pointer; }
 	.mobile-nav-wrapper .closemobileMenu .anm { font-size:13px; padding:2px; float:right; }
 	.mobile-nav-wrapper { width:270px; height:100%;position:fixed; left:-270px; top:0; z-index:999; background-color:#ffffff; box-shadow:0 0 5px rgba(0,0,0,0.3); opacity:0; visibility:hidden;-ms-transition:all 0.4s ease-in-out; -webkit-transition:all 0.4s ease-in-out; transition:all 0.4s ease-in-out; }
 	.mobile-nav-wrapper.active { left:0; opacity:1; visibility:visible; }
@@ -137,11 +137,11 @@
 	.newsletter-section .justify-content-end { -webkit-flex-pack:center !important; -ms-flex-pack:center !important; justify-content:center !important; }
 	.footer-social { margin-top:30px; }
 	
-	.template-collection .collection-header { margin-bottom:20px; }
+	.collection .collection-header { margin-bottom:20px; }
 	
 	.product-details-img { margin-bottom:20px; }
 	h1.product-single__title, .product-single__title.h1 { font-size:16px; }
-	.template-product .tabs-listing .product-tabs a { padding:15px 10px; }
+	.product .tabs-listing .product-tabs a { padding:15px 10px; }
 	
 	.left-content-product { width:100%; padding-right:0; }
 	.sidebar-product { width:100%; padding-left:0; }
@@ -224,7 +224,7 @@
 	.mobile-hide { display:none; }
 	.container, .home3-boxed-layout .container-fluid { padding-left:15px; padding-right:15px; }
 	
-	.template-index-Bengal Ora .home-slideshow { padding-top:55px; }
+	.index-DARK .home-slideshow { padding-top: ; }
 	
 	.pb-section { padding-bottom:15px; }
 	.section { padding-top:20px; padding-bottom:20px; }
@@ -277,8 +277,8 @@
 	
 	.list-view-item__image-column { width:85px; }
 	
-	.product-template__container .shareRow .medium-up--one-third { width:100%; }
-	.product-template__container .shareRow .display-table-cell { display:block; text-align:left !important; }
+	.product-__container .shareRow .medium-up--one-third { width:100%; }
+	.product-__container .shareRow .display-table-cell { display:block; text-align:left !important; }
 	.prstyle2 .prFeatures, .prstyle3 .prFeatures { padding-left:20px }
 	
 	.product-right-sidebar .product-details-img { width:100%; float:left; padding-right:0; margin-bottom:20px; }
@@ -288,9 +288,9 @@
 	.password-table .password-cell { display:none; }
 	.password-table .password-cell + .password-cell { display:table; width:100%; }
 	
-	.template-blog .sidebar { margin-top:30px; }
-	.template-blog .mini-list-item .mini-view_image { width:80px; }
-	.template-blog .mini-list-item .details { margin-left:0; }
+	.blog .sidebar { margin-top:30px; }
+	.blog .mini-list-item .mini-view_image { width:80px; }
+	.blog .mini-list-item .details { margin-left:0; }
 	
 	.cart thead, .cart-price, .cart .cart__update-wrapper { display:none; padding-top:0; padding-bottom:15px; }
 	.cart .small--hide { display:none; }
@@ -358,7 +358,7 @@
 	.product-single .product-featured-img { margin-bottom:30px; }
 	.product-single .grid_item-title { font-size:22px; margin-bottom:10px; }
 	.product-single .display-table-cell { padding-left:0; padding-right:0; }
-	.product-template__container .product-single__meta { margin-bottom:0; }
+	.product-__container .product-single__meta { margin-bottom:0; }
 	
 	.home7-shoes .grid-products .slick-arrow { margin-top:0; }
 	.home7-shoes .slideshow .slideshow__subtitle { display:none; }
@@ -398,7 +398,7 @@
 	.categories-item img { width:100%; }
 	.categories-list-items .btn { font-size:12px; padding:5px 10px; }
 	
-	#site-scroll { font-size:18px; line-height:30px; height:30px; width:30px; right:15px; bottom:30px; }
+	#site-scroll { font-size:18px; line-height:30px; height:30px; width:30px; right:25px; bottom:80px; }
 	#site-scroll i { line-height:30px; }
 	
 	.close-announcement { right:10px; }
