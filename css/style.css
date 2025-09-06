@@ -114,8 +114,18 @@ summary {
   color: #07ff00;
   background: #000000;
 }
+
+
+
+
+
+html {
+  scrollbar-width: thin;
+  scrollbar-color: #ffffff #000000;
+}
+
 body {
-cursor: url("cursor.png") , auto;
+cursor: url("cursor 2.png") , auto;
 }
 audio,
 canvas,
